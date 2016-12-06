@@ -15,3 +15,22 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+config/secrets.yml
+config/settings.yml
+config/database.yml
+/coverage/*
+/spec/tmp
+#
+## Environment normalisation:
+/.bundle
+/vendor/bundle
+## Deployment - don't include Project specific configuration
+config/deploy/*
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+# Ingore swap files
+*.swp
+
+spec/examples.txt
+

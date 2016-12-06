@@ -11,7 +11,7 @@ gem 'therubyracer', platforms: :ruby
 
 gem 'bootstrap', '~>4.0.0.alpha5'
 gem 'bootstrap_form'
-gem 'haml-rails'
+#gem 'haml-rails'
 gem 'responders'
 
 gem 'jquery-rails'
@@ -21,6 +21,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem 'devise'
+
+gem 'cells-rails'
+gem 'cells-haml'
+gem 'haml', '~>5.0.0.beta.2', github: 'haml/haml'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

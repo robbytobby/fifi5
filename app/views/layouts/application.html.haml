@@ -8,6 +8,5 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   %body
     .container
-      #flash
-        = render 'flash'
+      #flash= cell('flash', flash).()
       = yield

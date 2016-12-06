@@ -10,8 +10,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'therubyracer', platforms: :ruby
 
 gem 'bootstrap', '~>4.0.0.alpha5'
-gem 'haml-rails'
 gem 'bootstrap_form'
+gem 'haml-rails'
 gem 'responders'
 
 gem 'jquery-rails'
@@ -24,11 +24,15 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  gem 'pry'
+  gem 'rspec-rails', '~>3.5'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
 
 group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
   gem 'listen', '~> 3.0.5'

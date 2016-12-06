@@ -26,6 +26,13 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails', '~>3.5'
+  gem 'rubocop'
+  gem 'capybara'
+  gem 'guard'
+  gem 'guard-bundler'
+  gem 'guard-rspec'
+  gem 'guard-rubocop'
+  gem 'guard-spring'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end

@@ -2,6 +2,7 @@
 label.required:after
   content: " *"
 .has-error
-  @extend .has-danger
+  input
+    @extend .is-invalid
   label, .help-block
     @extend .text-danger

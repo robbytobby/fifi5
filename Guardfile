@@ -96,3 +96,10 @@ end
 guard :rails_best_practices do
   watch(%r{^app/(.+)\.rb$})
 end
+
+guard 'brakeman', run_on_start: true do
+  watch(%r{^app/.+\.(erb|haml|rhtml|rb)$})
+  watch(%r{^config/.+\.rb$})
+  watch(%r{^lib/.+\.rb$})
+  watch('Gemfile')
+end

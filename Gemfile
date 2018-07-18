@@ -54,7 +54,9 @@ group :development, :test do
 end
 
 group :development do
+  gem 'brakeman'
   gem 'guard'
+  gem 'guard-brakeman', require: false
   gem 'guard-bundler', require: false
   gem 'guard-rails_best_practices', github: 'logankoester/guard-rails_best_practices'
   gem 'guard-rspec', require: false

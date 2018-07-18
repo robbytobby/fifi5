@@ -13,3 +13,7 @@ Metrics/LineLength:
     - config/environments/production.rb
     - spec/rails_helper.rb
     - Gemfile
+
+Metrics/BlockLength:
+  Exclude:
+    - Guardfile

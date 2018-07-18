@@ -92,3 +92,7 @@ guard :rspec, cmd: 'bundle exec rspec' do
     Dir[File.join("**/#{m[1]}.feature")][0] || 'spec/acceptance'
   end
 end
+
+guard :rails_best_practices do
+  watch(%r{^app/(.+)\.rb$})
+end

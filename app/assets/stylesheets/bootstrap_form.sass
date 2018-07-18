@@ -1,0 +1,8 @@
+@import "bootstrap"
+label.required:after
+  content: " *"
+.has-error
+  input
+    @extend .is-invalid
+  label, .help-block
+    @extend .text-danger

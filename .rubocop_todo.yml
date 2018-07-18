@@ -10,9 +10,24 @@ Style/MixinUsage:
 Metrics/LineLength:
   Exclude:
     - config/initializers/content_security_policy.rb
+    - config/initializers/devise.rb
     - config/environments/production.rb
     - spec/rails_helper.rb
     - Gemfile
+    - db/schema.rb
+    - db/migrate/*
+
+Style/NumericLiterals:
+  Exclude:
+    - db/schema.rb
+
+Metrics/AbcSize:
+  Exclude:
+    - db/migrate/*
+
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/*
 
 Metrics/BlockLength:
   Exclude:

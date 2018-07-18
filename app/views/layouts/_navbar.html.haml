@@ -1,0 +1,15 @@
+%nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+  %a.navbar-brand{href: '#'} FiFi
+  %btn.navbar-toggler{type: 'button',
+                      data: {toggle: 'collapse', target: '#navbarCollapse'},
+                      aria: {controls: 'navbarCollapse', expanded: 'false',
+                             label: 'Toggle navigation'}}
+    %span.navbar-toggler-application
+  #navbarCollapse.collapse.navbar-collapse
+    %ul.navbar-nav.mr-auto
+      %li.nav-item
+        %a.nav-link{href: '#'}
+          Bikes
+          %span.sr-only
+      %li.nav-item
+        = link_to 'logout', destroy_user_session_path, method: :delete, class: 'nav-link'

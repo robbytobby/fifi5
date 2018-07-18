@@ -1,9 +1,0 @@
-%h2 Resend unlock instructions
-= bootstrap_form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f|
-  .row
-    .inputs.col-sm-6
-      = f.text_field :username, autofocus: true
-      = render "devise/shared/links"
-  .row
-    .actions.col-sm-6
-      = f.primary "Resend unlock instructions"

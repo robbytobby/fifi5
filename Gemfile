@@ -42,7 +42,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 #gem 'devise'
 #gem 'cells-rails'
 #gem 'cells-haml'
-#gem 'haml'
+gem 'haml-rails', '~> 1.0'
 
 
 group :development, :test do

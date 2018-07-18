@@ -49,23 +49,22 @@ gem 'responders'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'guard'
-  gem 'guard-bundler', require: false
-  gem 'guard-rspec', require: false
-  gem 'guard-rubocop'
-  gem 'guard-spring'
   gem 'pry'
   gem 'rspec-rails', '~> 3.7'
-  gem 'rubocop', require: false
 end
 
 group :development do
-  # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
+  gem 'guard'
+  gem 'guard-bundler', require: false
+  gem 'guard-rails_best_practices', github: 'logankoester/guard-rails_best_practices'
+  gem 'guard-rspec', require: false
+  gem 'guard-rubocop'
+  gem 'guard-spring'
   gem 'listen', '>= 3.0.5', '< 3.2'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-  # gem 'rails_best_practices'
+  gem 'rails_best_practices'
+  gem 'rubocop', require: false
   gem 'spring'
-  # gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'
 end
 

@@ -1,0 +1,15 @@
+#Offense count: 2
+Style/MixinUsage:
+ Exclude:
+   - 'bin/setup'
+   - 'bin/update'
+
+# Offense count: 32
+# Configuration parameters: AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, IgnoredPatterns.
+# URISchemes: http, https
+Metrics/LineLength:
+  Exclude:
+    - config/initializers/content_security_policy.rb
+    - config/environments/production.rb
+    - spec/rails_helper.rb
+    - Gemfile

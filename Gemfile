@@ -49,15 +49,14 @@ gem 'responders'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  gem 'rspec-rails', '~> 3.7'
-  # gem 'pry'
-  gem 'rubocop', require: false
-  # gem 'capybara'
   gem 'guard'
   gem 'guard-bundler', require: false
   gem 'guard-rspec', require: false
   gem 'guard-rubocop'
   gem 'guard-spring'
+  gem 'pry'
+  gem 'rspec-rails', '~> 3.7'
+  gem 'rubocop', require: false
 end
 
 group :development do

@@ -37,10 +37,10 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-# gem 'bootstrap'
-# gem 'bootstrap_form'
+gem 'bootstrap'
+gem 'bootstrap_form'
 # gem 'responders'
-# gem 'jquery-rails'
+gem 'jquery-rails'
 # gem 'devise'
 # gem 'cells-rails'
 # gem 'cells-haml'
@@ -56,8 +56,8 @@ group :development, :test do
   gem 'guard'
   gem 'guard-bundler', require: false
   gem 'guard-rspec', require: false
-  gem 'guard-spring'
   gem 'guard-rubocop'
+  gem 'guard-spring'
 end
 
 group :development do

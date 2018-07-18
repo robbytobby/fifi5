@@ -55,8 +55,9 @@ group :development, :test do
   # gem 'capybara'
   gem 'guard'
   gem 'guard-bundler', require: false
-  gem 'guard-rubocop'
+  gem 'guard-rspec', require: false
   gem 'guard-spring'
+  gem 'guard-rubocop'
 end
 
 group :development do

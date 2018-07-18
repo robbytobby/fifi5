@@ -39,12 +39,12 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'bootstrap'
 gem 'bootstrap_form'
-# gem 'responders'
+gem 'haml-rails', '~> 1.0'
 gem 'jquery-rails'
+gem 'responders'
 # gem 'devise'
 # gem 'cells-rails'
 # gem 'cells-haml'
-gem 'haml-rails', '~> 1.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class FlashCell < Cell::ViewModel
   def initialize(*arg)
     super(*arg)
@@ -26,11 +28,11 @@ class FlashCell < Cell::ViewModel
                 close_span,
                 type: 'button',
                 class: 'close',
-                data: {dismiss: "alert"},
-                aria: {label: 'Close'})
+                data: { dismiss: 'alert' },
+                aria: { label: 'Close' })
   end
 
   def close_span
-    content_tag(:span, '&times'.html_safe, aria: {hidden: 'true'})
+    content_tag(:span, '&times'.html_safe, aria: { hidden: 'true' })
   end
 end

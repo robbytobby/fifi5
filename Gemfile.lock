@@ -77,6 +77,17 @@ GEM
       rack (>= 1.6.0)
       rack-test (>= 0.6.3)
       xpath (~> 3.1)
+    cells (4.1.7)
+      declarative-builder (< 0.2.0)
+      declarative-option (< 0.2.0)
+      tilt (>= 1.4, < 3)
+      uber (< 0.2.0)
+    cells-haml (0.0.10)
+      cells (>= 4.0.1, <= 6.0.0)
+      haml (>= 4.1.0.beta.1)
+    cells-rails (0.0.9)
+      actionpack (>= 3.0)
+      cells (>= 4.1.6, < 5.0.0)
     childprocess (0.9.0)
       ffi (~> 1.0, >= 1.0.11)
     chromedriver-helper (1.2.0)
@@ -94,6 +105,9 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
+    declarative-builder (0.1.0)
+      declarative-option (< 0.2.0)
+    declarative-option (0.1.0)
     devise (4.4.3)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -318,6 +332,7 @@ GEM
     turbolinks-source (5.1.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    uber (0.1.0)
     uglifier (4.1.15)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.4.0)
@@ -344,6 +359,8 @@ DEPENDENCIES
   brakeman
   byebug
   capybara (>= 2.15, < 4.0)
+  cells-haml
+  cells-rails
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
@@ -380,4 +397,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.2
+   1.16.3

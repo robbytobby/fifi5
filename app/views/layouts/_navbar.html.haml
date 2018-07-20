@@ -5,11 +5,23 @@
                       aria: {controls: 'navbarCollapse', expanded: 'false',
                              label: 'Toggle navigation'}}
     %span.navbar-toggler-application
-  #navbarCollapse.collapse.navbar-collapse
-    %ul.navbar-nav.mr-auto
-      %li.nav-item
-        %a.nav-link{href: '#'}
-          Bikes
-          %span.sr-only
-      %li.nav-item
-        = link_to 'logout', destroy_user_session_path, method: :delete, class: 'nav-link'
+  -if user_signed_in?
+    #navbarCollapse.collapse.navbar-collapse
+      %ul.navbar-nav.mr-auto
+        %li.nav-item
+          %a.nav-link{href: '#'}
+            Bikes
+            %span.sr-only
+      %ul.navbar-nav.pull-right
+        %li.nav-item.dropdown
+          = link_to 'personal', '#', class: 'nav-link dropdown-toggle',
+                                     id: "navbarPersonal", role: 'button',
+                                     data: {toggle: "dropdown"}
+          %div.dropdown-menu{aria: {labelledby: 'navbarPersonal'}}
+            %a.dropdown-item{href: '#'} item 1
+            %a.dropdown-item{href: '#'} item 2
+            %a.dropdown-item{href: '#'} item 3
+        %li.nav-item
+          = link_to 'logout', destroy_user_session_path,
+                              method: :delete,
+                              class: 'nav-link'

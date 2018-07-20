@@ -13,7 +13,5 @@
     %header
       = render 'layouts/navbar'
     %main.container
-      #flash
-        = notice
-        = alert
+      = cell('flash', flash)
       = yield

@@ -3,7 +3,7 @@
 class FlashCell < Cell::ViewModel
   def initialize(*arg)
     super(*arg)
-    @output = ''
+    @output = +''
     process_flash
   end
 

@@ -6,3 +6,10 @@ de:
       user:
         username: Username
         password: Passwort
+        eamail: Email
+    errors:
+      models:
+        user:
+          attributes:
+            username:
+              blank: muß ausgefüllt werden

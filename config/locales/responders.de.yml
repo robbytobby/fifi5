@@ -10,3 +10,7 @@ de:
       destroy:
         notice: '%{resource_name} wurde erfolgreich gelöscht.'
         alert: '%{resource_name} konnte nicht gelöscht werden.'
+    unlocks:
+      create:
+        notice: 'Anweisungen zum Entsperren wurden verschickt.'
+        alert: 'Anwesungen zum Entsperren konnten nicht verschickt werden.'

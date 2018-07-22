@@ -46,8 +46,6 @@ de:
       signed_in: Erfolgreich angemeldet.
       signed_out: Erfolgreich abgemeldet.
       already_signed_out: Erfolgreich abgemeldet.
-      new:
-        log_in: Anmeldung
     unlocks:
       send_instructions: Du erhälst in wenigen Minuten eine E-Mail mit der Anleitung, wie du deinen Account entsperren kannst.
       send_paranoid_instructions: Falls deine E-Mail-Adresse in unserer Datenbank existiert, erhälst du in wenigen Minuten eine E-Mail, mit der Anleitung, wie du deinen Account entsperren kannst.

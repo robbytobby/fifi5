@@ -1,11 +1,16 @@
-%h2 Log in
-= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+%h2= t '.log_in'
+-flash.each do |name, msg|
+  -if msg.class == Array
+    - msg.each do |m|
+      = content_tag :div, m
+  - else
+    = content_tag :div, msg
+= bootstrap_form_with(model: resource, as: resource_name, url: session_path(resource_name)) do |f|
   .row
     .col-sm-6
       = f.text_field :username, autofocus: true
       = f.password_field :password, autocomplete: "off"
       = render "devise/shared/links"
-      .row
-        .actions.col-sm-2
-          = f.primary "Log in"
-        .col-sm-10.pull-right
+  .row
+    .col-sm-6
+      = f.submit "Log in"

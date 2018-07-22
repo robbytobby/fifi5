@@ -12,6 +12,7 @@ Metrics/LineLength:
     - config/initializers/content_security_policy.rb
     - config/initializers/devise.rb
     - config/environments/production.rb
+    - config/application.rb
     - spec/rails_helper.rb
     - Gemfile
     - db/schema.rb

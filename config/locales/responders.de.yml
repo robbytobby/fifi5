@@ -10,7 +10,12 @@ de:
       destroy:
         notice: '%{resource_name} wurde erfolgreich gelöscht.'
         alert: '%{resource_name} konnte nicht gelöscht werden.'
-    unlocks:
-      create:
-        notice: 'Anweisungen zum Entsperren wurden verschickt.'
-        alert: 'Anwesungen zum Entsperren konnten nicht verschickt werden.'
+    devise:
+      unlocks:
+        create:
+          notice: 'Anweisungen zum Entsperren wurden verschickt.'
+          alert: 'Anwesungen zum Entsperren konnten nicht verschickt werden.'
+      passwords:
+        create:
+          notice: 'Eine Mail mit Anweisungen zu Zurücksetzen des Passwortes wurde verschickt.'
+          alert: 'Das Passwort konnte nicht zurückgesetzt werden.'

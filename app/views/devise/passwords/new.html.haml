@@ -1,9 +1,7 @@
-%h2= t '.forgot_your_password'
-= bootstrap_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
-  .row
-    .col-sm-6
-      = f.text_field :username, autofocus: true, autocomplete: "username"
-      = render "devise/shared/links"
-  .row
-    .col-sm-6
-      = f.primary t '.send_me_reset_password_instructions'
+.d-flex.p-2.justify-content-center
+  %h2.col-md-6= t '.forgot_your_password'
+.d-flex.p-2.justify-content-center
+  = bootstrap_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class: 'col-md-6' }) do |f|
+    = f.text_field :username, autofocus: true, autocomplete: "username"
+    = render "devise/shared/links"
+    = f.primary t('.send_me_reset_password_instructions'), class: 'btn btn-block btn-primary'

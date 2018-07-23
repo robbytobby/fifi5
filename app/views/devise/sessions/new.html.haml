@@ -1,10 +1,8 @@
-%h2= t '.log_in'
-= bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  .row
-    .col-sm-6
-      = f.text_field :username, autofocus: true
-      = f.password_field :password, autocomplete: "off"
-      = render "devise/shared/links"
-  .row
-    .col-sm-6
-      = f.primary t '.submit_login'
+.d-flex.p-2.justify-content-center
+  %h2.col-md-6= t '.log_in'
+.d-flex.p-2.justify-content-center
+  = bootstrap_form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: 'col-md-6'}) do |f|
+    = f.text_field :username, autofocus: true
+    = f.password_field :password, autocomplete: "off"
+    = render "devise/shared/links"
+    = f.submit t('.submit_login'), class: 'btn btn-block btn-primary'

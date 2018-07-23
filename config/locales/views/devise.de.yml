@@ -10,7 +10,7 @@ de:
         sign_up: 'Registrieren'
     passwords:
       new:
-        send_me_reset_password_instructions: 'Anweisungen zum Zurücksetzen des Passwortes schicken'
+        send_me_reset_password_instructions: 'Anweisungen zum Zurücksetzen schicken'
         forgot_your_password: 'Passwort vergessen?'
     sessions:
       new:
@@ -18,5 +18,5 @@ de:
         submit_login: anmelden
     unlocks:
       new:
-        title: Anweisungen zum Ensperren erneut zuschicken
-        resend_unlock_instructions: Anweisungen losschicken
+        account_locked: Account gesperrt?
+        resend_unlock_instructions: Anweisungen zum Entsperren schicken

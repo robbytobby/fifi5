@@ -1,4 +1,4 @@
-%ul.list-inline.small.text-muted
+%ul.d-flex.list-inline.small.text-mute.justify-content-between
   - if controller_name != 'sessions'
     %li.list-inline-item= link_to t('.log_in'), new_session_path(resource_name)
   - if devise_mapping.registerable? && controller_name != 'registrations'

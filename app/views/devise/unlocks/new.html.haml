@@ -1,9 +1,7 @@
-%h2= t '.title'
-= bootstrap_form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f|
-  .row
-    .col-sm-6
-      = f.text_field :username, autofocus: true
-      = render 'devise/shared/links'
-  .row
-    .col-sm-6
-      = f.primary t '.resend_unlock_instructions'
+.d-flex.p-2.justify-content-center
+  %h2.col-md-6= t '.account_locked'
+.d-flex.p-2.justify-content-center
+  = bootstrap_form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post, class: 'col-md-6' }) do |f|
+    = f.text_field :username, autofocus: true
+    = render 'devise/shared/links'
+    = f.submit t('.resend_unlock_instructions'), class: 'btn btn-block btn-primary'

@@ -3,7 +3,7 @@ de:
     shared:
       links:
         did_not_receive_confirmation_instructions: 'Keine Anweisung zum Bestätigen erhalten?'
-        did_not_receive_unlock_instructions: 'Keine Anweisung zum Entsperren erhalten?'
+        did_not_receive_unlock_instructions: 'Account gesperrt?'
         forgot_your_password: 'Passwort vergessen?'
         log_in: 'Anmelden'
         sign_in_with: 'Anmelden mittels %{provider}'

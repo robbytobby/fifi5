@@ -1,3 +1,7 @@
+Layout/AlignParameters:
+  Exclude:
+    - bin/*
+
 Layout/EmptyLinesAroundBlockBody:
   Exclude:
     - db/schema.rb
@@ -20,10 +24,19 @@ Metrics/LineLength:
     - Gemfile
     - db/schema.rb
     - db/migrate/*
+    - bin/*
 
 Metrics/MethodLength:
   Exclude:
     - db/migrate/*
+
+Performance/RegexpMatch:
+  Exclude:
+    - bin/*
+
+Style/ExpandPathArguments:
+  Exclude:
+    - bin/*
 
 Style/FrozenStringLiteralComment:
   Exclude:
@@ -41,3 +54,4 @@ Style/NumericLiterals:
 Style/StringLiterals:
   Exclude:
     - db/schema.rb
+    - bin/*

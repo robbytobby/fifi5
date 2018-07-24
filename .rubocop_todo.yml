@@ -1,12 +1,15 @@
-#Offense count: 2
-Style/MixinUsage:
- Exclude:
-   - 'bin/setup'
-   - 'bin/update'
+Layout/EmptyLinesAroundBlockBody:
+  Exclude:
+    - db/schema.rb
 
-# Offense count: 32
-# Configuration parameters: AllowHeredoc, AllowURI, URISchemes, IgnoreCopDirectives, IgnoredPatterns.
-# URISchemes: http, https
+Metrics/AbcSize:
+  Exclude:
+    - db/migrate/*
+
+Metrics/BlockLength:
+  Exclude:
+    - Guardfile
+
 Metrics/LineLength:
   Exclude:
     - config/initializers/content_security_policy.rb
@@ -18,18 +21,23 @@ Metrics/LineLength:
     - db/schema.rb
     - db/migrate/*
 
-Style/NumericLiterals:
-  Exclude:
-    - db/schema.rb
-
-Metrics/AbcSize:
-  Exclude:
-    - db/migrate/*
-
 Metrics/MethodLength:
   Exclude:
     - db/migrate/*
 
-Metrics/BlockLength:
+Style/FrozenStringLiteralComment:
   Exclude:
-    - Guardfile
+    - db/schema.rb
+
+Style/MixinUsage:
+  Exclude:
+    - 'bin/setup'
+    - 'bin/update'
+
+Style/NumericLiterals:
+  Exclude:
+    - db/schema.rb
+
+Style/StringLiterals:
+  Exclude:
+    - db/schema.rb

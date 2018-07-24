@@ -42,11 +42,14 @@ gem 'bootstrap_form', '>= 4.0.0.alpha1'
 gem 'cells-haml'
 gem 'cells-rails'
 gem 'devise'
-gem 'enforce_schema_rules'
 gem 'font-awesome-sass', '~> 5.0.13'
 gem 'haml-rails', '~> 1.0'
 gem 'jquery-rails'
 gem 'responders'
+# gem "schema_validations", git: 'https://github.com/SynergyDataSystems/schema_validations.git'
+# gem "schema_plus_columns", '~> 0.3.0'
+# gem "schema_plus_indexes", git: 'https://github.com/SchemaPlus/schema_plus_indexes.git'
+# gem 'schema_plus', '~> 2.0.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

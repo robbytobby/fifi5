@@ -311,13 +311,6 @@ ActiveRecord::Schema.define(version: 2018_07_25_142748) do
     t.index ["product_category_id"], name: "index_products_on_product_category_id"
   end
 
-  create_table "roles", id: :serial, force: :cascade do |t|
-    t.string "name", limit: 255, null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_roles_on_name", unique: true
-  end
-
   create_table "settings", id: :serial, force: :cascade do |t|
     t.string "key", limit: 255, null: false
     t.text "value"
@@ -379,16 +372,6 @@ ActiveRecord::Schema.define(version: 2018_07_25_142748) do
     t.text "details"
     t.index ["submitter_id"], name: "index_topics_on_submitter_id"
     t.index ["team_meeting_id"], name: "index_topics_on_team_meeting_id"
-  end
-
-  create_table "user_roles", id: :serial, force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "role_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["role_id"], name: "index_user_roles_on_role_id"
-    t.index ["user_id", "role_id"], name: "index_user_roles_on_user_id_and_role_id"
-    t.index ["user_id"], name: "index_user_roles_on_user_id"
   end
 
   create_table "users", id: :serial, force: :cascade do |t|
@@ -473,6 +456,4 @@ ActiveRecord::Schema.define(version: 2018_07_25_142748) do
   add_foreign_key "team_meetings", "addresses", column: "minute_taker_id", name: "team_meetings_minute_taker_id_fkey"
   add_foreign_key "topics", "addresses", column: "submitter_id", name: "topics_submitter_id_fkey"
   add_foreign_key "topics", "team_meetings", name: "topics_team_meeting_id_fkey"
-  add_foreign_key "user_roles", "roles", name: "user_roles_role_id_fkey"
-  add_foreign_key "user_roles", "users", name: "user_roles_user_id_fkey"
 end

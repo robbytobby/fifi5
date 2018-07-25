@@ -17,7 +17,7 @@ class FlashCell < Cell::ViewModel
     model.each do |key, value|
       @key = key
       @output << content_tag(:div,
-                             value.html_safe + dismiss_button,
+                             value.to_s.html_safe + dismiss_button,
                              class: "alert flash-#{key}",
                              id: "flash_#{key}")
     end

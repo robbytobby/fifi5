@@ -13,6 +13,9 @@ Metrics/AbcSize:
 Metrics/BlockLength:
   Exclude:
     - Guardfile
+    - spec/**/*_spec.rb
+    - db/schema.rb
+    - db/migrate/*
 
 Metrics/LineLength:
   Exclude:
@@ -51,7 +54,15 @@ Style/NumericLiterals:
   Exclude:
     - db/schema.rb
 
+Layout/SpaceBeforeComma:
+  Exclude:
+    - db/migrate/*
+
 Style/StringLiterals:
   Exclude:
     - db/schema.rb
     - bin/*
+
+Style/WordArray:
+  Exclude:
+    - db/schema.rb

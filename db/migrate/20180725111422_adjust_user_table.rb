@@ -5,7 +5,7 @@ class AdjustUserTable < ActiveRecord::Migration[5.2]
     change_column :users, :username, :string, null: false, limit: 50, unique: true, case_sensitive: false, index: :unique
     change_column :users, :sign_in_count, :integer, null: false, default: 0
     change_column :users, :failed_attempts, :integer, null: false, default: 0
-    add_column :users, :email, :string, null: false, limit: 80
+    add_column :users, :email, :string, null: false, limit: 80, default: ''
     add_column :users, :admin, :boolean, null: false, default: false
     add_column :users, :accountant, :boolean, null: false, default: false
     remove_column :users, :confirmation_token
@@ -15,7 +15,7 @@ class AdjustUserTable < ActiveRecord::Migration[5.2]
   end
 
   def down
-    change_column :users, :username, :string, null: false, default: ''
+    change_column :users, :username, :string, null: false, limit: 255
     change_column :users, :sign_in_count, :integer, default: 0
     change_column :users, :failed_attempts, :integer, default: 0
     remove_column :users, :email

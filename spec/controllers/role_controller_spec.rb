@@ -4,7 +4,7 @@ require 'rails_helper'
 
 RSpec.describe RoleController, type: :controller do
   context 'without login' do
-    subject { put :update, params: {role: 'admin'} }
+    subject { put :update, params: { role: 'admin' } }
 
     describe 'put #update' do
       it 'redirects to login page' do
@@ -15,7 +15,7 @@ RSpec.describe RoleController, type: :controller do
 
   context 'with an admin loged in' do
     let(:user) { User.find_by(username: 'admin') }
-    subject { put :update, params: {role: 'admin'} }
+    subject { put :update, params: { role: 'admin' } }
     before(:each) { sign_in user }
 
     describe 'put #update role to admin' do

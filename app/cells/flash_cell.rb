@@ -4,13 +4,16 @@ class FlashCell < ApplicationCell
   attr_reader :key
 
   def show
-    model.map{|key, value|
-      @key, @value = key, value
+    output = model.map do |key, value|
+      @key = key
+      @value = value
       render :show
-    }.join
+    end
+    output.join
   end
 
   private
+
   def message
     send "#{@value.class.to_s.underscore}_message"
   end

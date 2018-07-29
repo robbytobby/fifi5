@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class FlashCell < Cell::ViewModel
+class FlashCell < ApplicationCell
   attr_reader :key
 
   def show

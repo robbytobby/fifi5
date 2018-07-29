@@ -8,7 +8,7 @@ class FlashCell < ApplicationCell
   end
 
   private
-  
+
   def fragments
     model.map do |key, value|
       @key = key

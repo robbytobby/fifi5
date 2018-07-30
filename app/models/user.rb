@@ -2,7 +2,7 @@
 
 class User < ApplicationRecord
   devise :database_authenticatable, :recoverable, :trackable, :validatable,
-         :lockable, :timeoutable
+         :lockable, :timeoutable, :registerable
 
   validates :username, presence: true, uniqueness: true, length: { in: (4..50) }
   validates :email, presence: true, length: { maximum: 80 }, email: true

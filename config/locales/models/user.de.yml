@@ -1,15 +1,11 @@
 de:
   activerecord:
     models:
-      user: user
+      user: User
     attributes:
       user:
+        current_password: aktuelles Passwort
         username: Username
         password: Passwort
-        eamail: Email
-    errors:
-      models:
-        user:
-          attributes:
-            username:
-              blank: muß ausgefüllt werden
+        password_confirmation: Passwort Bestätigung
+        email: Email

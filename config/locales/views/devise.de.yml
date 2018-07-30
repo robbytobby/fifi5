@@ -12,6 +12,9 @@ de:
       new:
         send_me_reset_password_instructions: 'Anweisungen zum Zurücksetzen schicken'
         forgot_your_password: 'Passwort vergessen?'
+    registrations:
+      edit:
+        title: 'Login Daten bearbeiten'
     sessions:
       new:
         log_in: Anmeldung

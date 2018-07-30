@@ -25,6 +25,7 @@ module Fifi
     # the framework and any gems in your application.
 
     config.i18n.default_locale = :de
+    config.i18n.available_locales = :de
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.yml')]
   end
 end

@@ -1,7 +1,7 @@
 de:
   layouts:
     navbar:
-      as_customer: Meine Bestellungen
+      as_customer: Mein Kundenaccount
       bikes: 'Räder'
       change_password: Passwort ändern
-      edit_profile: Profil bearbeiten
+      edit_profile: Login bearbeiten

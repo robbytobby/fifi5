@@ -18,8 +18,7 @@
                     id: 'navbarPersonal', role: 'button',
                     data: {toggle: 'dropdown'}
           %div.dropdown-menu.dropdown-menu-right{aria: {labelledby: 'navbarPersonal'}}
-            %a.dropdown-item{href: '#'}= t '.change_password'
-            %a.dropdown-item{href: '#'}= t '.edit_profile'
+            %a.dropdown-item{href: edit_user_registration_path }= t '.edit_profile'
             %a.dropdown-item{href: '#'}= t '.as_customer'
             = cell(:toggle_role, current_user)
         %li.nav-item

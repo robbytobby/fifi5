@@ -14,9 +14,8 @@ RSpec.describe DashboardController, type: :controller do
   end
 
   context 'with a user loged in' do
-    let(:user) { User.find_by(username: 'user') }
     subject { get :index }
-    before(:each) { sign_in user }
+    before(:each) { user_sign_in }
 
     describe 'GET #index' do
       it 'returns http success' do

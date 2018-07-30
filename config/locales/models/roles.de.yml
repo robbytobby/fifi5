@@ -1,0 +1,5 @@
+de:
+  roles:
+    user: User
+    accountant: Buchhalter
+    admin: Administrator

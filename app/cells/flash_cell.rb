@@ -13,7 +13,7 @@ class FlashCell < ApplicationCell
     model.map do |key, value|
       @key = key
       @value = value
-      render :show
+      render :show unless message.blank?
     end
   end
 
@@ -24,4 +24,6 @@ class FlashCell < ApplicationCell
   def string_message
     @value
   end
+
+  def true_class_message; end
 end

@@ -64,6 +64,7 @@ RSpec.configure do |config|
     DatabaseCleaner.clean_with(:truncation)
     FactoryBot.create(:user, username: 'User')
     FactoryBot.create(:user, username: 'Admin', admin: true)
+    FactoryBot.create(:user, username: 'Accountant', accountant: true)
   end
 
   config.around(:each) do |example|

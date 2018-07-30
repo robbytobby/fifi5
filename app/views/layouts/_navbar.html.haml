@@ -21,7 +21,7 @@
             %a.dropdown-item{href: '#'}= t '.change_password'
             %a.dropdown-item{href: '#'}= t '.edit_profile'
             %a.dropdown-item{href: '#'}= t '.as_customer'
-            %a.dropdown-item{href: '#'}= t '.login_as'
+            = cell(:toggle_role, current_user)
         %li.nav-item
           = link_to icon('fas', 'sign-out-alt'),
                     destroy_user_session_path,

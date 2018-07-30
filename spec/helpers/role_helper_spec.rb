@@ -2,16 +2,20 @@
 
 require 'rails_helper'
 
-# Specs in this file have access to a helper object that includes
-# the RoleHelper. For example:
-#
-# describe RoleHelper do
-#   describe "string concat" do
-#     it "concats two strings with spaces" do
-#       expect(helper.concat_strings("this","that")).to eq("this that")
-#     end
-#   end
-# end
 RSpec.describe RoleHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe 'current_role' do
+    it 'is user per default' do
+      expect(helper.current_role).to eq :user
+    end
+
+    it 'is accountant' do
+      session[:current_role] = :accountant
+      expect(helper.current_role).to eq :accountant
+    end
+
+    it 'is admin' do
+      session[:current_role] = :admin
+      expect(helper.current_role).to eq :admin
+    end
+  end
 end

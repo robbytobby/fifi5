@@ -41,7 +41,6 @@ RSpec.describe User do
     it 'has to be less then 80 characters long' do
       twenty = 'abcdeabcdeabcdeabcde'
       user.email = "#{twenty}.#{twenty}.#{twenty}@abcdefghi.test.org"
-      puts user.email.length
       expect(user).not_to be_valid
     end
 
